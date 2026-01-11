@@ -1,0 +1,22 @@
+# Core Computer Vision
+opencv-python
+
+# Visualization
+matplotlib
+seaborn
+
+# Utilities
+imutils
+pyautogui
+
+# Deep Learning (Day-05)
+torch
+torchvision
+facial-emotion-recognition
+
+
+#Deep Learning Project
+numpy
+keras
+h5py
+scipy
