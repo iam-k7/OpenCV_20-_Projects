@@ -1,5 +1,6 @@
 # Core Computer Vision
 opencv-python
+opencv-contrib-python
 
 # Visualization
 matplotlib
