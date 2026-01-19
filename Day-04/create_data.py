@@ -1,7 +1,7 @@
 import cv2, os
 
 datasets = 'Day-04\datasets'   #give your datasets folder path
-sub_data = 'vijay'
+sub_data = 'Nivitha'
 
 path = os.path.join(datasets, sub_data)  #datasets/Kesavan
 if not os.path.isdir(path):
