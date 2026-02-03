@@ -15,7 +15,6 @@ torch
 torchvision
 facial-emotion-recognition
 
-
 #Deep Learning Project
 numpy
 keras

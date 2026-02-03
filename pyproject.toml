@@ -1,0 +1,22 @@
+[project]
+name = "opencv-projects"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "facial-emotion-recognition>=0.3.4",
+    "h5py>=3.15.1",
+    "imutils>=0.5.4",
+    "keras>=3.12.1",
+    "matplotlib>=3.10.8",
+    "numpy>=2.2.6",
+    "opencv-contrib-python>=4.13.0.90",
+    "opencv-python>=4.13.0.90",
+    "pyautogui>=0.9.54",
+    "scipy>=1.15.3",
+    "seaborn>=0.13.2",
+    "tensorflow>=2.20.0",
+    "torch>=2.10.0",
+    "torchvision>=0.25.0",
+]
