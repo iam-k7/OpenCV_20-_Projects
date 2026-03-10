@@ -1,22 +1,32 @@
-# Core Computer Vision
-opencv-python
-opencv-contrib-python
 
+# -----------------------------
+# Core AI + Computer Vision
+# -----------------------------
+numpy==1.26.4
+opencv-contrib-python==4.9.0.80
+tensorflow==2.15.0
+scikit-learn
+
+# -----------------------------
 # Visualization
+# -----------------------------
 matplotlib
 seaborn
 
+# -----------------------------
 # Utilities
+# -----------------------------
 imutils
-pyautogui
 
-# Deep Learning (Day-05)
+# -----------------------------
+# Deep Learning (PyTorch)
+# -----------------------------
 torch
 torchvision
 facial-emotion-recognition
 
-#Deep Learning Project
-numpy
-keras
+# -----------------------------
+# Project Support
+# -----------------------------
 h5py
 scipy
