@@ -1,54 +1,57 @@
 # OpenCV 20+ Projects
 
-A collection of hands-on **OpenCV computer vision projects** in Python, designed to help you learn image and video processing from basics to advanced topics. Each day adds new code examples demonstrating different vision techniques using OpenCV. :contentReference[oaicite:1]{index=1}
+A collection of hands-on OpenCV (and related ML) examples in Python, organized by "Day". Each script is intended to be a small, focused demo.
 
----
+## What is in this repo
 
-## 📌 Repository Structure
+This repo is organized by "Day". Each Python file is intended to be a small, focused demo.
 
+## Scripts Overview
 
-> This repo organizes OpenCV examples by day to encourage incremental learning.
+- `Day-01_to_03/Day_01.py` - Motion detection using frame differencing, thresholding, and contour filtering.
+- `Day-01_to_03/Day_02.py` - Real-time face detection using OpenCV Haar cascades.
+- `Day-01_to_03/Day_03.py` - Red object detection in HSV, contour center calculation, and simple direction logic.
+- `Day-04/create_data.py` - Capture face images from webcam into a `datasets/` directory (for training).
+- `Day-04/face_recognize.py` - Train an OpenCV FisherFace recognizer and run face recognition from webcam.
+- `Day-05/main.py` - Real-time facial emotion detection from webcam using `facial_emotion_recognition`.
+- `Day-05/mobile.py` - Facial emotion detection from an IP Webcam stream URL.
+- `Day-06/train.py` - Train a small Keras CNN for diabetes classification using `pima-indians-diabetes.csv`.
+- `Day-06/test.py` - Load the saved diabetes model and print predictions.
+- `Day-07/main.py` - Object detection using MobileNet-SSD (Caffe) with OpenCV DNN and webcam input.
+- `Day-08/img_create.py` - Download images using `bing-image-downloader` (creates `dataset/train`).
+- `Day-08/train.py` - Train a binary CNN classifier and save `model.json` and `model.h5`.
+- `Day-08/test.py` - Load `model.json`/`model.h5` and classify images under `Day-08/dataset/test`.
+- `Day-09/train.py` - Train a grayscale hand-gesture CNN for classes `NONE` to `FIVE` and save `model.json`/`model.h5`.
+- `Day-09/test.py` - Load the trained gesture model and classify images under `Day-09/dataset/test`.
+- `Day-10/train.py` - Leaf disease classification CNN training (saves `model.json`/`model.h5`).
+- `Day-10/test.py` - Load the leaf disease model and classify images under `Day-10/dataset/test`.
+- `Day-11/character.py` - PyQt5 GUI for Gujarati character recognition using a CNN. Expects datasets in `Day-11/dataset/train` and `Day-11/dataset/test`.
+- `Day-11/updated.py` - PyQt5 UI/layout file (generated code).
 
----
+## Requirements
 
-## 🧠 What You’ll Learn
+Python 3.10+.
 
-This project covers a range of computer vision topics with OpenCV, including:
-
-✔️ Image loading and display  
-✔️ Video capture and processing  
-✔️ Drawing and transformation on images  
-✔️ Object detection techniques  
-✔️ Deep learning based detection using DNN modules  
-✔️ Practical examples you can expand on
-
-These examples help cement core CV concepts so you can build real applications like:
-- face detection
-- object tracking
-- edge detection
-- video analytics and more
-
----
-
-## 🚀 Getting Started
-
-### 💡 Requirements
-
-Install Python 3.7+ and then install dependencies:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+## How to run
 
+Run a script from the repo root:
 
----
+```bash
+python "Day-01_to_03/Day_01.py"
+python "Day-04/face_recognize.py"
+python "Day-07/main.py"
+```
 
-✅ **Tips for improvement:**
+If a script uses the webcam, it typically exits on `ESC` (some demos use `q`).
 
-1. Add a short description for each script (Day-01 to Day-07).
-2. Include sample output images / screenshots.
-3. Add badges — e.g., build status, license, Python version.
+## Notes
 
----
-
-If you want, I can tailor this `README.md` further (with badges and per-script descriptions). Just share brief details of each file.
+- Some scripts use hard-coded Windows paths for models/datasets. If you get "file not found" errors, update those paths inside the corresponding script.
+- Training scripts create model files like `model.json` and `model.h5`. Make sure your matching `test.py` loads the expected model outputs.
+<!--
 ::contentReference[oaicite:4]{index=4}
